@@ -43,7 +43,7 @@ module.exports = {
     "func-call-spacing": ["warn", "never"],
     "generator-star-spacing": ["warn", {"before": true, "after": true}],
     "handle-callback-err": ["warn", "^(err|error)$"],
-    "indent": ["warn", 4, {
+    "indent": ["warn", 2, {
       "SwitchCase": 1,
       "VariableDeclarator": 1,
       "outerIIFEBody": 1,

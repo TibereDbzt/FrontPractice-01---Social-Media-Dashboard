@@ -16,7 +16,7 @@ let config = {
 
     mode: 'production',
 
-    entry: './src/scripts/index.js',
+    entry: './src/scripts/main.js',
 
     output: {
       path: PATHS.dist,
@@ -37,6 +37,10 @@ let config = {
                 }
             },
             {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.sass$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', {
                     loader: 'postcss-loader',
@@ -50,19 +54,19 @@ let config = {
                 }, 'sass-loader']
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jp(e*)g|gif|svg)$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
-                            context: PATHS.src,
-                            name: `[path][name].[ext]`,
+                            limit: 8000,
+                            name: 'assets/images/[hash]-[name].[ext]'
                         },
                     }
                 ]
             },
             {
-                test: /\.(woff(2)?|ttf|eot|svg)$/,
+                test: /\.(woff(2)?|ttf|eot)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {

@@ -1,0 +1,19 @@
+.dashboard__header
+  display: flex
+  flex-wrap: wrap
+
+  .dashboard__titles
+    flex-grow: 1
+    flex-shrink: 0
+    white-space: nowrap
+    padding-right: 50px
+
+  .switcher
+    justify-content: space-between
+
+@media screen and (max-width: 590px)
+  .dashboard__titles
+    margin-bottom: 30px
+
+  .switcher
+    width: 100%

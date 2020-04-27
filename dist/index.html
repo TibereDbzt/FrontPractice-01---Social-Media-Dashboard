@@ -4,14 +4,215 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Document</title>
+     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+     <title>Dashboard | Social Media Stats</title>
 <link href="style.css" rel="stylesheet"></head>
-<body>
-
-     <div class="content">
-          <h1>salut</h1>
-          <a href="#">OKKK</a>
-     </div>
-
+<body class="dark">
+     <main class="wrap">
+          <header class="dashboard__header">
+               <div class="dashboard__titles">
+                    <h1 id="test">Social Media Dashboard</h1>
+                    <h3>Total Followers: 23,004</h3>
+               </div>
+               <div class="switcher">
+                    <label id="switcher-label" class="switcher__label" for="theme-switcher">Light Mode</label>
+                    <span id="switch-btn" class="switcher__btn">
+                         <input class="switcher__checkbox" id="theme-switcher" type="checkbox"></input>
+                         <span class="switcher__slide"></span>
+                    </span>
+               </div>
+          </header>
+          <section class="dashboard">
+               <a class="card facebook" href="#">
+                    <article class="social-card social-card--large">
+                         <header class="social-card__header">
+                              <img class="social-card__network-icon" src="assets/images/icon-facebook.svg" alt="Facebook's icon">
+                              <h4 class="social-card__username">@nathanf</h4>
+                         </header>
+                         <div class="social-card__main">
+                              <span class="social-card__count">1987</span>
+                              <span class="social-card__unit">followers</span>
+                         </div>
+                         <div class="social-card__footer">
+                              <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                              <span class="social-card__progress--green">12 Today</span>
+                         </div>
+                    </article>
+               </a>
+               <a class="card twitter" href="#">
+                    <article class="social-card social-card--large twitter">
+                         <header class="social-card__header">
+                              <img class="social-card__network-icon" src="assets/images/icon-twitter.svg" alt="Twitter's icon">
+                              <h4 class="social-card__username">@nathanf</h4>
+                         </header>
+                         <div class="social-card__main">
+                              <span class="social-card__count">1044</span>
+                              <span class="social-card__unit">followers</span>
+                         </div>
+                         <div class="social-card__footer">
+                              <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                              <span class="social-card__progress--green">99 Today</span>
+                         </div>
+                    </article>
+               </a>
+               <a class="card instagram" href="#">
+                    <article class="social-card social-card--large instagram">
+                         <header class="social-card__header">
+                              <img class="social-card__network-icon" src="assets/images/icon-instagram.svg" alt="Instagram's icon">
+                              <h4 class="social-card__username">@realnathanf</h4>
+                         </header>
+                         <div class="social-card__main">
+                              <span class="social-card__count">11k</span>
+                              <span class="social-card__unit">followers</span>
+                         </div>
+                         <div class="social-card__footer">
+                              <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                              <span class="social-card__progress--green">1099 Today</span>
+                         </div>
+                    </article>
+               </a>
+               <a class="card youtube" href="#">
+                    <article class="social-card social-card--large youtube">
+                         <header class="social-card__header">
+                              <img class="social-card__network-icon" src="assets/images/icon-youtube.svg" alt="Youtube's icon">
+                              <h4 class="social-card__username">Nathan F.</h4>
+                         </header>
+                         <div class="social-card__main">
+                              <span class="social-card__count">8239</span>
+                              <span class="social-card__unit">subscribers</span>
+                         </div>
+                         <div class="social-card__footer">
+                              <img class="social-card__progress-icon" src="assets/images/icon-down.svg" alt="decrease icon">
+                              <span class="social-card__progress--red">144 Today</span>
+                         </div>
+                    </article>
+               </a>
+          </section>
+          <section">
+               <h2>Overview - Today</h2>
+               <div class="dashboard">
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Page Views</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-facebook.svg" alt="Facebook's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">87</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">3%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Likes</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-facebook.svg" alt="Facebook's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">52</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">2%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Likes</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-instagram.svg" alt="Instgram's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">5462</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">2257%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Profile Views</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-instagram.svg" alt="Instagram's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">52k</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">1375%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Retweets</h3>
+                                   <img class="social-card__network-icon twitter" src="assets/images/icon-twitter.svg" alt="Twitter's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">117</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">303%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Likes</h3>
+                                   <img class="social-card__network-icon twitter" src="assets/images/icon-twitter.svg" alt="Twitter's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">507</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-up.svg" alt="increase icon">
+                                        <span class="social-card__progress--green">553%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Likes</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-youtube.svg" alt="Youtube's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">107</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-down.svg" alt="increase icon">
+                                        <span class="social-card__progress--red">19%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+                    <a class="card" href="#">
+                         <article class="social-card social-card--small">
+                              <header class="social-card__header">
+                                   <h3 class="social-card__title">Total Views</h3>
+                                   <img class="social-card__network-icon" src="assets/images/icon-youtube.svg" alt="Youtube's icon">
+                              </header>
+                              <div class="social-card__main">
+                                   <span class="social-card__count">1407</span>
+                                   <div class="social-card__footer">
+                                        <img class="social-card__progress-icon" src="assets/images/icon-down.svg" alt="increase icon">
+                                        <span class="social-card__progress--red">12%</span>
+                                   </div>
+                              </div>
+                         </article>
+                    </a>
+               </div>
+          </section>
+     </main>
 <script type="text/javascript" src="scripts/main.js"></script></body>
 </html>

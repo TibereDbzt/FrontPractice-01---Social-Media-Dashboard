@@ -13,7 +13,7 @@ let config = {
 
   mode: 'development',
 
-  entry: './src/scripts/index.js',
+  entry: './src/scripts/main.js',
 
   output: {
     path: PATHS.dist,
@@ -38,6 +38,10 @@ let config = {
         use: {
           loader: 'babel-loader',
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.sass$/,

@@ -1,0 +1,36 @@
+.switcher
+  display: flex
+  align-items: center
+
+.switcher__label
+  font-size: 15px
+  color: var(--headings)
+  margin-right: 15px
+
+.switcher__btn
+  position: relative
+  width: 48px
+  height: 24px
+  border-radius: 20px
+  background: var(--toggle)
+  cursor: pointer
+
+.switcher__checkbox
+  visibility: hidden
+  position: absolute
+
+.switcher__slide
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  width: 40%
+  height: 80%
+  border-radius: 100%
+  background-color: var(--card)
+  transition: left 0.3s ease
+
+body.dark .switcher__slide
+  left: 3px
+
+body.light .switcher__slide
+  left: 26px

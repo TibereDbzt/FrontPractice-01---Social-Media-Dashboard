@@ -1,18 +1,18 @@
-body
-     background-color: #ffffff
+// External : import librairies and frameworks
 
-     .content
-          width: 100%
-          height: 100vh
-          display: flex
-          justify-content: center
-          align-items: center
-          background-image: url(./../assets/img/glitch.jpg)
+// Config : load fonts, declare functions and variables
+@import "02_config/fonts"
+@import "02_config/variables"
+@import "02_config/functions"
 
-          h1
-               font-size: 30px
-               color: black
-               transform: translateX(20px)
+// Common : document strucure and generic styles
+@import "03_common/structure"
+@import "03_common/global"
 
-a
-  transition: transform 1s
+// Components : repeating elements
+@import "04_components/switcher-btn"
+@import "04_components/social-card"
+
+// Layouts : specific pages or sections styles
+@import "05_layouts/header"
+@import "05_layouts/dashboard"

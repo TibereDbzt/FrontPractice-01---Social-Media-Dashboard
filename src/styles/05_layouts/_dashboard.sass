@@ -1,0 +1,13 @@
+.dashboard
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  column-gap: 30px
+  row-gap: 25px
+
+@media screen and (max-width: 1000px)
+  .dashboard
+    grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 500px)
+  .dashboard
+    grid-template-columns: 1fr
