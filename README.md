@@ -7,3 +7,6 @@ My solution to the Social Media Dashboard challenge of frontendmentor.io : https
 - Webpack
 - PostCSS (Autoprefixer)
 - A little bit of JS ES6
+
+## Result
+- URL : https://frontpractice.now.sh/
